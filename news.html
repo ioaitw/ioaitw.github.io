@@ -10,6 +10,89 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+  .admission-table-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 0.75rem;
+    overflow-x: auto;
+  }
+
+  .admission-table {
+    width: min(100%, 620px);
+    background: #ffffff;
+    border: 1px solid #d6dfeb;
+    border-radius: 12px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(28, 51, 84, 0.08);
+    font-size: 1rem;
+    color: #1f2d3d;
+  }
+
+  .admission-table th,
+  .admission-table td {
+  padding: 6px 18px;
+  line-height: 1.35;
+  border-right: 1px solid #d6dfeb;
+  border-bottom: 1px solid #d6dfeb;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  }
+
+  .admission-table th:last-child,
+  .admission-table td:last-child {
+    border-right: none;
+  }
+
+  .admission-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  .admission-table thead th {
+    background: linear-gradient(180deg, #edf4fb 0%, #e3eef9 100%);
+    color: #1f4f8c;
+    font-weight: 700;
+  }
+
+  .admission-table tbody tr:nth-child(even) {
+    background: #f8fbff;
+  }
+
+  .admission-table tbody tr:hover {
+    background: #eef5ff;
+  }
+
+  .admission-table .col-name {
+    min-width: 180px;
+  }
+
+  .admission-table .col-gender {
+    min-width: 90px;
+  }
+
+  .admission-table .col-id {
+    min-width: 120px;
+  }
+
+  .admission-note {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #5c6b7a;
+  }
+
+  @media (max-width: 640px) {
+  .admission-table th,
+  .admission-table td {
+    padding: 5px 12px;
+    font-size: 0.95rem;
+    line-height: 1.35;
+  }
+  }
+</style>
 </head>
 <body>
 
@@ -39,6 +122,54 @@
 <section class="section-sm">
   <div class="container">
     <div class="content-wrap">
+
+      	<article class="news-item">
+  <div class="news-date">2026 / 06 月</div>
+  <div class="news-body">
+    <h3><span class="news-tag news-tag-announce">公告</span>IOAI 2026 初選錄取名單</h3>
+    <p>IOAI 2026 初選錄取名單如下：</p>
+
+    <div class="admission-table-wrap">
+      <table class="admission-table">
+        <thead>
+          <tr>
+            <th class="col-name">姓名</th>
+            <th class="col-gender">性別</th>
+            <th class="col-id">考試編號</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>王Ｏ閔</td><td>男</td><td>09</td></tr>
+          <tr><td>吳Ｏ柔</td><td>女</td><td>14</td></tr>
+          <tr><td>林Ｏ鼎</td><td>男</td><td>25</td></tr>
+          <tr><td>林Ｏ彥</td><td>男</td><td>13</td></tr>
+          <tr><td>邱Ｏ淞</td><td>男</td><td>20</td></tr>
+          <tr><td>洪Ｏ睿</td><td>男</td><td>03</td></tr>
+          <tr><td>陳Ｏ穎</td><td>男</td><td>08</td></tr>
+          <tr><td>黃Ｏ諺</td><td>男</td><td>10</td></tr>
+          <tr><td>黃Ｏ薰</td><td>女</td><td>19</td></tr>
+          <tr><td>黃Ｏ安</td><td>女</td><td>22</td></tr>
+          <tr><td>溫Ｏ翰</td><td>男</td><td>17</td></tr>
+          <tr><td>蔡Ｏ瑾</td><td>女</td><td>01</td></tr>
+          <tr><td>鄧Ｏ瀚</td><td>男</td><td>07</td></tr>
+          <tr><td>謝Ｏ杉</td><td>男</td><td>16</td></tr>
+          <tr><td>謝Ｏ潤</td><td>男</td><td>06</td></tr>
+          <tr><td>顏Ｏ宇</td><td>男</td><td>05</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="admission-note">（錄取名單依姓名筆劃順序排列，非依成績名次排列。）</p>
+  </div>
+</article>
+
+	<article class="news-item">
+  <div class="news-date">2026 / 06 月</div>
+  <div class="news-body">
+    <h3><span class="news-tag news-tag-announce">公告</span>一、二階選訓時程公告</h3>
+    <p>第一階段選訓時間為 2026 年 7 月 1 日至 7 月 5 日，第二階段選訓時間為 2026 年 7 月 6 日至 7 月 10 日。</p>
+  </div>
+</article>
 
       <div class="news-list">
 		<article class="news-item">
